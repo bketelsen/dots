@@ -14,7 +14,13 @@
     keep-outputs = true
     keep-derivations = true
   '';
-  
+
+
+    # nix options for derivations to persist garbage collection
+    environment.pathsToLink = [
+     "/share/nix-direnv"
+   ];
+   
   fileSystems."/".options = [ "noatime" "nodiratime" ];
 
   boot.initrd.availableKernelModules = [ "xhci_pci" "nvme" ];
@@ -82,6 +88,7 @@
     curl
     wget 
     vim
+    nix-direnv
   ]);
 
   services.blueman.enable = true;

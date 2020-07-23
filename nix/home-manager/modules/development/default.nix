@@ -19,6 +19,9 @@
     theme = "agnoster";
   };
 
+  programs.direnv.enable = true;
+  programs.direnv.enableZshIntegration = true;
+
 
   home.packages = (with pkgs; [
   

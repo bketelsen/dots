@@ -11,7 +11,13 @@ fi
 
 rm -rf ${HOME}/.config/nixpkgs/home.nix ${HOME}/.config/nixpkgs/modules
 
-cp ./machines/linux-desktop.nix ${HOME}/.config/nixpkgs/home.nix
+
+if [ -z "${WSLENV}" ]; then
+    cp ./machines/linux-desktop.nix ${HOME}/.config/nixpkgs/home.nix
+else
+    cp ./machines/linux-wsl.nix ${HOME}/.config/nixpkgs/home.nix
+fi
+
 cp -R modules ${HOME}/.config/nixpkgs/
 
 nix-channel --update

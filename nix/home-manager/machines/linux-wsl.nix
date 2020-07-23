@@ -13,10 +13,8 @@
 
 
   imports = [
-    ./modules/communication
+
     ./modules/development
-    ./modules/desktop/gnome.nix
-    ./modules/desktop/vscode.nix
-    ./modules/web-browsers
+
   ];
 }

@@ -6,7 +6,6 @@
     ./go.nix
     ./nix.nix
     ./rust.nix
-    ./vscode.nix
   ];
 
   

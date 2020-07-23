@@ -9,4 +9,3 @@ nix:
 
 nix-home:
 	@cd ./nix/home-manager && ./install.sh
-

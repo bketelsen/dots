@@ -19,6 +19,6 @@
       "plugdev"
       "wheel"
     ];
-    shell = pkgs.zsh;
+    shell = pkgs.bash;
   };
 }

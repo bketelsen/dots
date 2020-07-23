@@ -9,10 +9,8 @@
   ];
 
   
-  # Enable zsh
-  programs.direnv.enable = true;
-  programs.direnv.enableBashIntegration = true;
-
+    programs.direnv.enable = true;
+    programs.direnv.enableNixDirenvIntegration = true;
 
   home.packages = (with pkgs; [
   

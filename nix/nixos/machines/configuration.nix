@@ -10,6 +10,11 @@
 
   # nixpkgs.overlays = [ (import ./overlays/fingerprint-reader.nix) ];
 
+  nix.extraOptions = ''
+    keep-outputs = true
+    keep-derivations = true
+  '';
+  
   fileSystems."/".options = [ "noatime" "nodiratime" ];
 
   boot.initrd.availableKernelModules = [ "xhci_pci" "nvme" ];

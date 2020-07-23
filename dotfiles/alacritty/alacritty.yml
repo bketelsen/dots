@@ -1,0 +1,14 @@
+background_opacity: 0.90
+
+font:
+  size: 11.0
+  normal:
+    family: Cascadia Code
+  bold:
+    family: Cascadia Code
+  italic:
+    family: Cascadia Code
+
+key_bindings:
+  - { key: Insert, mods: Control, action: Copy }
+  - { key: Insert, mods: Shift, action: Paste }

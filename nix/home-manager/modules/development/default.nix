@@ -10,17 +10,8 @@
 
   
   # Enable zsh
-  programs.zsh.enable = true;
-
-  # Enable Oh-my-zsh
-  programs.zsh.oh-my-zsh = {
-    enable = true;
-    plugins = [ "git" "sudo" "docker" "kubectl" ];
-    theme = "agnoster";
-  };
-
   programs.direnv.enable = true;
-  programs.direnv.enableZshIntegration = true;
+  programs.direnv.enableBashIntegration = true;
 
 
   home.packages = (with pkgs; [

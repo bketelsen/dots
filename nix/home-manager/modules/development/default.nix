@@ -9,8 +9,7 @@
     ./vscode.nix
   ];
 
-  nixpkgs.config = { android_sdk = { accept_license = true; }; };
-
+  
   # Enable zsh
   programs.zsh.enable = true;
 
@@ -39,6 +38,7 @@
     nodejs
     yarn
 
+    unison
   
     # Python
     pipenv

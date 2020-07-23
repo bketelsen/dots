@@ -7,5 +7,5 @@ dotfiles:
 nix:
 	@cd ./nix/nixos && ./install.sh
 
-nix-home:
+home:  dotfiles
 	@cd ./nix/home-manager && ./install.sh

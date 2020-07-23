@@ -39,6 +39,7 @@
 
   services.hardware.bolt.enable = true;
 
+  services.sshd.enable = true;
 
   networking = {
     hostName = "galactica";

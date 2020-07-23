@@ -42,7 +42,7 @@
 
   networking = {
     hostName = "galactica";
-
+    firewall = { enable = "false" };
     networkmanager = { enable = true; };
 
     nameservers = [ "8.8.8.8" "8.8.4.4" ];

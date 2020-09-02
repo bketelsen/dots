@@ -1,5 +1,10 @@
 { config, pkgs, ... }:
 
 {
-  home.packages = (with pkgs; [ discord slack signal-desktop zoom ]);
+  home.packages = (with pkgs; [ 
+    discord 
+    remmina
+    slack 
+    signal-desktop 
+   ]);
 }

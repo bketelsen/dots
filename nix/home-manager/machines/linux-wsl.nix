@@ -15,6 +15,8 @@
   imports = [
 
     ./modules/development
+    ./modules/emacs
+    ./modules/terminal
 
   ];
 }

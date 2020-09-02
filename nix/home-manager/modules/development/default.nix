@@ -17,8 +17,6 @@
     htop
     neovim
     starship
-    synergy
-    quicksynergy
     rsync
     git
       # Make
@@ -33,6 +31,16 @@
     pipenv
     python
     pythonPackages.virtualenv
+
+    emacs
+
+jq
+mosh
+nix-prefetch-github
+unison
+vscode
+unzip
+ripgrep
 
   ]);
 }

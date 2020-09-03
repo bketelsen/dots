@@ -3,7 +3,7 @@
 set -e
 
 echo Removing Old Configs...
-sudo rm -rf /etc/nixos/{overlays,modules,packages}
+sudo rm -rf /etc/nixos/{overlays,modules,packages,services}
 
 echo Copying Modules...
 sudo cp -r ./modules /etc/nixos/

@@ -1,27 +1,26 @@
 { pkgs, ... }:
 
 {
-  services.synergy = {
-    server.enable = true;	
-    server.autoStart = true;
-    server.address = "0.0.0.0";
-    server.screenName = "galactica";
-    server.configFile = pkgs.writeTextFile {
-      name = "synergy.conf";
-      text = ''
-        section: screens
-          	galactica:
-        	caprica:
-        end
-        section: links
-        	galactica:
-        		left = caprica
+
+  environment.etc."synergy-server.conf" = { text = ''
+	section: screens
+		galactica:
+		caprica:
+	end
+	section: links
 		caprica:
 			right = galactica
-        end
-      '';
+		galactica:
+			left = caprica
+	end
+  ''; };
+
+    services.synergy.server = {
+      enable = true;
+      autoStart = false;
+      screenName = "galactica";
+      address = "0.0.0.0";
     };
-  };
 
 }
 

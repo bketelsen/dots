@@ -16,7 +16,7 @@
     ./modules/communication
     ./modules/terminal
     ./modules/development
-    ./modules/desktop/gnome.nix
+    #./modules/desktop/synergy.nix
     ./modules/desktop/vscode.nix
     ./modules/web-browsers
     ./modules/emacs

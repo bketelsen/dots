@@ -30,6 +30,9 @@
     wget
     vim
     nix-direnv
+    thunderbird
+    rambox
+    onedrive
   ]);
 
 }

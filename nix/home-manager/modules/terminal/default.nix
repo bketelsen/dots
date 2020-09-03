@@ -3,14 +3,19 @@
 {
   home.packages = (with pkgs; 
   [ 
-
-emacs
-htop
-jq
-mosh
-nix-prefetch-github
-unison
-unzip
-ripgrep
+    # Utilities
+    unzip
+    ripgrep
+    direnv
+    jq
+    mosh
+    nix-prefetch-github
+    unison
+    jq
+    htop
+    mosh
+    starship
+    rsync
+    git
     ]);
 }

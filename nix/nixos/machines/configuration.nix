@@ -21,9 +21,9 @@
     environment.pathsToLink = [
      "/share/nix-direnv"
    ];
-   
-  
- 
+
+
+
   # # Enable fprintd
   # services.fprintd.enable = true;
 
@@ -42,7 +42,7 @@
    # useSandbox = true;
   };
 
-  
+
 
 
   services.blueman.enable = true;
@@ -58,10 +58,10 @@
 
 
 
- 
+
   console.useXkbConfig = true;
 
   nixpkgs.config = { allowUnfree = true; };
-
+  environment.variables.WEBKIT_DISABLE_COMPOSITING_MODE = "1";
   system.stateVersion = "20.03";
 }
